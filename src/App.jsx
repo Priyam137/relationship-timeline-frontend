@@ -17,7 +17,7 @@ function App() {
     file: null,
   });
 
-  const BASE_URL = "https://relationship-timeline-backend.onrender.com"; // 🔁 Change this after deployment
+  const BASE_URL = import.meta.env.VITE_BASE_URL; // 🔁 Change this after deployment
 
   const startDate = new Date("2025-06-05T06:00:00");
 
